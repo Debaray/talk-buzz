@@ -1,8 +1,11 @@
 import { Avatar, IconButton } from '@material-ui/core'
-import { RateReviewOutlined } from '@material-ui/icons'
+import { RateReviewOutlined, Search } from '@material-ui/icons'
 import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
-import "./Sidebar.css"
+import "./Sidebar.css";
+import { selectUser } from '../../features/userSlice';
+import SidebarChat from '../SidebarChat/SidebarChat';
+import db, { auth } from "../../config/firebase.config";
 
 function Sidebar() {
 
