@@ -5,3 +5,14 @@
     border-bottom: 1px solid lightgrey;
     cursor: pointer;
 }
+
+.sidebarChat:hover{
+    background-color: #3e93fd;
+    color: white;
+}
+
+.sidebarChat_info{
+    margin-left: 15px;
+    position: relative;
+    width: 100%;
+}
