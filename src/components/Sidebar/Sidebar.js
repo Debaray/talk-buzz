@@ -20,6 +20,14 @@ function Sidebar() {
         })
     }, [])
 
+    const addChat = () => {
+        const chatName = prompt("please enter the chat name");
+        if (chatName) {
+            db.collection('chats').add({
+                chatName: chatName,
+            })
+        }
+    }
 
     return (
         <div className="sidebar">
