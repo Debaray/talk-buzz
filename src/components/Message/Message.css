@@ -35,3 +35,8 @@
 .message_photo{
     order: 0;
 }
+
+.message_sender >p{
+    background-color: #3cabfa;
+    color: white;
+}
