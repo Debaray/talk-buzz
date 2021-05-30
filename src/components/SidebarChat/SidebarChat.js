@@ -34,7 +34,7 @@ function SidebarChat() {
             <div className="sidebarChat_info">
                 <h3>{chatName}</h3>
                 <p>{chatInfo[0]?.message}</p>
-
+                <small>{timeago.format(new Date(chatInfo[0]?.timestamp?.toDate()).toLocaleString())}</small>
             </div>
         </div >
     )
