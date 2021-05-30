@@ -12,3 +12,17 @@
     padding: 10px;
     height: 50px;
 }
+
+.sidebar_avatar{
+    cursor: pointer;
+    margin: 10px;
+}
+.sidebar_input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-color: #e1e1e1;
+    color: gray;
+    border-radius: 5px;
+}
