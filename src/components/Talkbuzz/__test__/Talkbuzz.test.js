@@ -4,7 +4,7 @@ import Talkbuzz from '../Talkbuzz';
 import {cleanup} from '@testing-library/react';
 import renderer from 'react-test-renderer';
 
-afterEach(cleanup);
+afterEach(cleanu);
 
 it("matches snapshot", () =>{
     const tree = renderer.create(<Talkbuzz></Talkbuzz>).toJSON();
