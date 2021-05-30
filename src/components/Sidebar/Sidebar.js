@@ -48,10 +48,13 @@ function Sidebar() {
                     <RateReviewOutlined onClick={addChat} />
                 </IconButton>
             </div>
+
+
             <div className="sidebar_chats">
                 {chats.map(({ id, data: { chatName } }) => (
                     < SidebarChat key={id} id={id} chatName={chatName} />
                 ))}
+
             </div>
 
         </div >
