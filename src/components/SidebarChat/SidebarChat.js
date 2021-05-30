@@ -31,7 +31,11 @@ function SidebarChat() {
         }}
             className="sidebarChat" >
             <Avatar src={chatInfo[0]?.photo} />
+            <div className="sidebarChat_info">
+                <h3>{chatName}</h3>
+                <p>{chatInfo[0]?.message}</p>
 
+            </div>
         </div >
     )
 }
