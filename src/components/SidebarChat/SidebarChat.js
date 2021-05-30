@@ -6,7 +6,7 @@ import db from '../../config/firebase.config';
 import { useDispatch } from 'react-redux';
 import * as timeago from 'timeago.js';
 
-function SidebarChat() {
+function SidebarChat({ id, chatName }) {
 
     const dispatch = useDispatch();
     const [chatInfo, setChatInfo] = useState([]);
