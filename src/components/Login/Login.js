@@ -11,7 +11,7 @@ function Login() {
     <div className='login'>
       <div className='loginLogo'>
         <img src='https://i.ibb.co/pfWgGt4/talkbuzz.png' alt='' />
-        <h1>Talkbuzz Messaging</h1>
+        <h1>Talkbuzz</h1>
       </div>
 
       <Button onClick={signIn}>Sign In</Button>
