@@ -1,6 +1,6 @@
 import { Avatar, IconButton } from '@material-ui/core'
 import { RateReviewOutlined, Search } from '@material-ui/icons'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import "./Sidebar.css";
 import { selectUser } from '../../features/userSlice';
