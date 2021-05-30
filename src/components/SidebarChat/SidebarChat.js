@@ -1,10 +1,12 @@
 import React from 'react'
+import "./SidebarChat.css";
+
 
 function SidebarChat() {
     return (
-        <div>
+        <div className="sidebarChat">
             <h2>this is sidebar chat</h2>
-        </div>
+        </div >
     )
 }
 
