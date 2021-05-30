@@ -1,9 +1,11 @@
 import React from "react";
+import "./Talkbuzz.css";
+import Chat from "../Chat/Chat";
 
 function Talkbuzz() {
   return (
-    <div>
-      <h1>This is talkbuzz message</h1>
+    <div className='talkbuzz'>
+      <Chat />
     </div>
   );
 }
