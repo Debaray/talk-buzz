@@ -8,9 +8,29 @@ function SidebarChat() {
 
     const dispatch = useDispatch();
     const [chatInfo, setChatInfo] = useState([]);
+
+    useEffect(() => {
+        db.collection('chats').doc(id).collection("messages").
+            orderBy("timestamp", "desc").
+            onSnapshot((snapshot) =>
+                setChatInfo(
+                    snapshot.docs.map((doc) => doc.data()))
+
+            );
+    }, [id])
+
     return (
-        <div className="sidebarChat">
-            <h2>this is sidebar chat</h2>
+        <div onClick={() => {
+            dispatch(
+                setChat({
+                    chatId: id,
+                    chatName: chatName,
+                })
+            )
+        }}
+            className="sidebarChat" >
+
+
         </div >
     )
 }
