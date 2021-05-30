@@ -1,9 +1,24 @@
 import { Avatar, IconButton } from '@material-ui/core'
 import { RateReviewOutlined } from '@material-ui/icons'
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useSelector } from 'react-redux'
 import "./Sidebar.css"
 
 function Sidebar() {
+
+    const user = useSelector(selectUser)
+    const [chats, setChats] = useState([]);
+
+    useEffect(() => {
+        db.collection('chats').onSnapshot(snapshot => {
+            setChats(
+                snapshot.docs.map((doc) => ({
+                    id: doc.id,
+                    data: doc.data(),
+                }))
+            )
+        })
+    }, [])
 
 
     return (
