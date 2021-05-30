@@ -39,3 +39,8 @@
 .sidebar_chats::-webkit-scrollbar{
     display: none;
 }
+
+.sidebar_chats{
+    -ms-overflow-style:none;
+    scrollbar-width: none;
+}
