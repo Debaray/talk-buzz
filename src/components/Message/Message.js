@@ -1,9 +1,14 @@
 import React from 'react'
+import "./Message.css";
+import React, { forwardRef } from 'react';
+import { useSelector } from 'react-redux';
+import { selectUser } from '../../features/userSlice';
+import { Avatar } from '@material-ui/core';
 
 function Message() {
     return (
         <div>
-            <h2>This is message branch</h2>
+            <Avatar className="message_photo" src={photo} />
         </div>
     )
 }
