@@ -3,6 +3,7 @@ import "./SidebarChat.css";
 import { setChat } from '../../features/chatSlice';
 import db from '../../config/firebase.config';
 import { useDispatch } from 'react-redux';
+import { Avatar } from '@material-ui/core';
 
 function SidebarChat() {
 
@@ -29,7 +30,7 @@ function SidebarChat() {
             )
         }}
             className="sidebarChat" >
-
+            <Avatar src={chatInfo[0]?.photo} />
 
         </div >
     )
