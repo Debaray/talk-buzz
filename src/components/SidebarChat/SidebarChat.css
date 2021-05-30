@@ -16,3 +16,9 @@
     position: relative;
     width: 100%;
 }
+
+.sidebarChat_info >small{
+    position:absolute;
+    top: 5px;
+    right: 0;
+}
